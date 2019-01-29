@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bftv.wanderingguy.constraint_layout_demo.MyConstraintLayout2 xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/player_window"
+        android:layout_width="480dp"
+        android:layout_height="270dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="65dp"
+        android:background="@android:color/holo_green_dark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="播放器"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/player_window"
+        app:layout_constraintLeft_toLeftOf="@id/player_window"
+        app:layout_constraintRight_toRightOf="@id/player_window"
+        app:layout_constraintTop_toTopOf="@id/player_window" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="550dp" />
+
+    <TextView
+        android:id="@+id/video_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="权利的游戏"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toRightOf="@id/guide_line"
+        app:layout_constraintTop_toTopOf="@id/player_window" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="9.7"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toRightOf="@id/video_name"
+        app:layout_constraintTop_toTopOf="@id/player_window" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="103dp" />
+
+    <TextView
+        android:id="@+id/update_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14期"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintLeft_toRightOf="@id/guide_line"
+        app:layout_constraintTop_toBottomOf="@id/guide_line2" />
+
+    <TextView
+        android:id="@+id/year_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="2018"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@id/update_info"
+        app:layout_constraintTop_toBottomOf="@id/guide_line2" />
+
+    <TextView
+        android:id="@+id/director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="导演 姜文 冯小刚"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@id/guide_line"
+        app:layout_constraintTop_toBottomOf="@id/update_info"
+        app:layout_goneMarginTop="60dp" />
+
+    <TextView
+        android:id="@+id/actor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="演员 冯绍峰 赵丽颖"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@id/guide_line"
+        app:layout_constraintTop_toBottomOf="@id/director" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_line3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="45dp" />
+
+    <TextView
+        android:id="@+id/overview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:maxLines="2"
+        android:text="天下天下无贼天下天下天下无贼天下无贼天下无贼天下无贼天下无贼天下无贼天下无贼无贼无贼天下无贼天下无贼天下无贼天下无贼天下无贼无贼"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@id/guide_line"
+        app:layout_constraintRight_toRightOf="@id/guide_line3"
+        app:layout_constraintTop_toBottomOf="@id/actor" />
+
+    <Button
+        android:id="@+id/btn_full"
+        android:layout_width="65dp"
+        android:layout_height="70dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintHorizontal_bias="0"
+        android:text="全屏"
+        app:layout_constraintBottom_toBottomOf="@id/player_window"
+        app:layout_constraintEnd_toStartOf="@id/btn_buy"
+        app:layout_constraintStart_toStartOf="@id/guide_line" />
+
+    <Button
+        android:id="@+id/btn_buy"
+        android:layout_width="65dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="7dp"
+        android:text="购买"
+        app:layout_constraintBottom_toBottomOf="@id/player_window"
+        app:layout_constraintEnd_toStartOf="@id/btn_favor"
+        app:layout_constraintStart_toEndOf="@id/btn_full" />
+
+    <Button
+        android:id="@+id/btn_favor"
+        android:layout_width="65dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="7dp"
+        android:text="收藏"
+        app:layout_constraintBottom_toBottomOf="@id/player_window"
+        app:layout_constraintEnd_toStartOf="@id/guide_line3"
+        app:layout_constraintStart_toEndOf="@id/btn_buy" />
+
+</com.bftv.wanderingguy.constraint_layout_demo.MyConstraintLayout2>
