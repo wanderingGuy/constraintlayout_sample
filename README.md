@@ -113,6 +113,7 @@ xxx表示该控件在哪个方向的约束，YYY表示该约束指向的控件�
 </android.support.constraint.ConstraintLayout>
 ```
 ![效果图3.png](https://upload-images.jianshu.io/upload_images/6921358-8869caa32f56746a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 可以看到设置```app:layout_constraintDimensionRatio="2:1```属性表示宽高比为2:1，在已经限定控件宽度为300dp时，高度指定为0dp则可自己算出实际高度。
 
 #### 4. radius角度约束
@@ -205,7 +206,9 @@ xxx表示该控件在哪个方向的约束，YYY表示该约束指向的控件�
         app:layout_constraintLeft_toRightOf="@id/bt2" />
 </android.support.constraint.ConstraintLayout>
 ```
+
 效果图
+
 
 ![效果图6.png](https://upload-images.jianshu.io/upload_images/6921358-f05dc47dc66b332c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -239,7 +242,9 @@ xxx表示该控件在哪个方向的约束，YYY表示该约束指向的控件�
         app:layout_constraintTop_toTopOf="parent"/>
 </android.support.constraint.ConstraintLayout>
 ```
+
 ![效果图7.png](https://upload-images.jianshu.io/upload_images/6921358-aac06716334faa0d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 可以看到通过```layout_constraintGuide_begin```指定具体偏移值，而通过```layout_constraintGuide_percent```可指定偏移百分比。
 
 #### 8. 属性goneMargin
