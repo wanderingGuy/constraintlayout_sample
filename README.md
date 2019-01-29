@@ -206,6 +206,7 @@ xxx表示该控件在哪个方向的约束，YYY表示该约束指向的控件�
 </android.support.constraint.ConstraintLayout>
 ```
 效果图
+
 ![效果图6.png](https://upload-images.jianshu.io/upload_images/6921358-f05dc47dc66b332c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 其中```layout_constraintHorizontal_chainStyle```属性可设置一个约束链中view的分布情况。
